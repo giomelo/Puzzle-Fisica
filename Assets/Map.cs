@@ -10,16 +10,20 @@ public class Map : MonoBehaviour
     private Rigidbody rb;
     private void Update()
     {
-        if (Camera.main != null) _mousePosition = Camera.main.ViewportToWorldPoint(Input.mousePosition);
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-        ProcessInput(horizontal, vertical);
+        if(Controlador.controlador.canRotate)
+        {
+            if (Camera.main != null) _mousePosition = Camera.main.ViewportToWorldPoint(Input.mousePosition);
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
+            ProcessInput(horizontal, vertical);
+        }   
+        
     }
 
     private void ProcessInput(float horizontal, float vertical)
     {
         transform.Rotate(new Vector3(0, 0, -1), _speed * horizontal * Time.deltaTime);
-        transform.Rotate(new Vector3(-1, 0 ,0), _speed * vertical* Time.deltaTime);
+        transform.Rotate(new Vector3(-1, 0 ,0), _speed * -vertical* Time.deltaTime);
 
        // if (vertical == 0 || horizontal == 0) return;
         
