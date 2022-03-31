@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    
+    public GameObject Particles;
     private void OnTriggerEnter(Collider other) {
 
         switch(other.tag)
@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
             door.loackDisplay.SetActive(false);
             door.isFree = true;
             Destroy(other.gameObject);
+            Particles.GetComponent<ParticleSystem>().Play();
             break;
             
         }

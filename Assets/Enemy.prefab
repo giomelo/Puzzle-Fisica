@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1874620659587693795}
   - component: {fileID: 5811013169387114713}
   - component: {fileID: 1874620659587693794}
+  - component: {fileID: 6344223625600137382}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Death
@@ -95,5 +96,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0005633484, y: 0.001050887, z: 0.00056334824}
-  m_Center: {x: 1.7462298e-10, y: 0.00012618708, z: 0}
+  m_Size: {x: 0.0005633484, y: 0.0004134438, z: 0.00056334824}
+  m_Center: {x: 1.6448153e-10, y: -0.00019253457, z: 0}
+--- !u!65 &6344223625600137382
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371719084412197590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.000167708, y: 0.00060004165, z: 0.00016770848}
+  m_Center: {x: -0.000004600225, y: 0.00035160995, z: -0.000004600466}
