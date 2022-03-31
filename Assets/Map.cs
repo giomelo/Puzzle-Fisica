@@ -22,8 +22,8 @@ public class Map : MonoBehaviour
 
     private void ProcessInput(float horizontal, float vertical)
     {
-        transform.Rotate(new Vector3(0, 0, -1), _speed * horizontal * Time.deltaTime);
-        transform.Rotate(new Vector3(-1, 0 ,0), _speed * -vertical* Time.deltaTime);
+        transform.Rotate(new Vector3(0, 1, 0), _speed * horizontal * Time.deltaTime);
+        transform.Rotate(new Vector3(1, 0 ,0), _speed * vertical* Time.deltaTime);
 
        // if (vertical == 0 || horizontal == 0) return;
         
