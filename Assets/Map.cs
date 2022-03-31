@@ -5,7 +5,7 @@ using UnityEngine;
 public class Map : MonoBehaviour
 {
     private Vector3 _mousePosition;
-    private readonly float _speed = 10f;
+    private readonly float _speed = 15f;
     [SerializeField]
     private Rigidbody rb;
     private void Update()
