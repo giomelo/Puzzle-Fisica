@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public GameObject Particles;
+    public GameObject ParticleCoin;
     private void OnTriggerEnter(Collider other) {
 
         switch(other.tag)
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
 
             case "Coin":
             Controlador.controlador.AddCoin(1);
+            Instantiate(ParticleCoin, other.transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             break;
 

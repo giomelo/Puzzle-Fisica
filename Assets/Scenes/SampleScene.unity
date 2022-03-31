@@ -3159,11 +3159,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2069342325578562324, guid: 2778d0c6f1af9a742acec1ce791ddb60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.00705
+      value: 0.00951
       objectReference: {fileID: 0}
     - target: {fileID: 2069342325578562324, guid: 2778d0c6f1af9a742acec1ce791ddb60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00473
+      value: 0.00661
       objectReference: {fileID: 0}
     - target: {fileID: 2069342325578562324, guid: 2778d0c6f1af9a742acec1ce791ddb60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3316,8 +3316,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
+      propertyPath: RotationModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
+      propertyPath: RotationModule.curve.scalar
+      value: 3.1415925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
+      propertyPath: InheritVelocityModule.m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
+      propertyPath: InheritVelocityModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
+      propertyPath: InheritVelocityModule.m_Curve.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8582724590660380854, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
       propertyPath: m_RootOrder
@@ -6181,6 +6201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Particles: {fileID: 100596732}
+  ParticleCoin: {fileID: 4164615990053462670, guid: 0f1c406ecbc0cb944a4baa373a0ce060, type: 3}
 --- !u!1001 &6075977863496416251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6254,8 +6275,16 @@ PrefabInstance:
       value: KeyParticles
       objectReference: {fileID: 0}
     - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
+      propertyPath: RotationModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
+      propertyPath: RotationModule.curve.scalar
+      value: 1.5707963
       objectReference: {fileID: 0}
     - target: {fileID: 6628434064658328650, guid: c71c2ab7b3764b24f86bd9d44b1c1759, type: 3}
       propertyPath: InitialModule.startSize.scalar
